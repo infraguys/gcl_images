@@ -167,7 +167,7 @@ def create_domain(
     # TODO: Need default user pool
     if not os.path.exists(pool_image_path):
         subprocess.run(
-            f"sudo cp {image} {pool_image_path}",
+            f"sudo rm -f {pool_image_path}; sudo cp {image} {pool_image_path}",
             shell=True,
             check=True,
         )

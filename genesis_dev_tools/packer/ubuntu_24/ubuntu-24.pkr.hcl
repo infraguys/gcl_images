@@ -27,7 +27,7 @@ source "qemu" "ubuntu-24" {
   cpus                      = 4
   memory                    = 4092
   disk_image                = true
-  disk_size                 = "3600M"
+  disk_size                 = "4000M"
   disk_interface            = "virtio-scsi"
   disk_cache                = "unsafe"
   disk_discard              = "unmap"
